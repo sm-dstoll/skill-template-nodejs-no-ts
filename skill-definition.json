@@ -1,0 +1,96 @@
+{
+  "name": "Programmer_Humor",
+  "summary": "Pull a funny meme from reddit.com/r/programmerhumor",
+  "description": "Pull a funny meme from reddit.com/r/programmerhumor",
+  "isPublic": false,
+  "status": "ACTIVE",
+  "serviceProvider": "SKILL_API",
+  "categoryIds": [],
+  "endpointInitialize": null,
+  "endpointSession": null,
+  "endpointExecute": "https://david-s-test.loca.lt/execute",
+  "endpointEndSession": null,
+  "endpointEndProject": null,
+  "endpointMatchIntent": null,
+  "languages": null,
+  "config": {
+    "intents": [
+      {
+        "name": "RequestMeme",
+        "samples": [
+          "Tell me a programming joke",
+          "Can you show me a meme?",
+          "Make me laugh",
+          "Pull up some coding jokes",
+          "Show me some funny reddit posts",
+          "I want to see some funny memes",
+          "I need you to help me laugh",
+          "Tell me a joke",
+          "Show me something funny",
+          "Are there funny programming memes"
+        ]
+      }
+    ],
+    "matchType": "INTENT",
+    "skillType": "DEFAULT",
+    "exitPhrase": ".*",
+    "configMeta": [{
+        "name": "name_of_the_field",
+        "type": "TEXT",
+        "label": "label for the field",
+        "required": true,
+        "placeholder": "It looks like ‘1FAIpQLScXvTtA-GgPrAiZJERxKsG4-so4sEQ4Mm6pN-7gNnW’"
+      },{
+        "name": "read_options",
+        "type": "SELECT",
+        "label": "Digital person to read the options for choice questions",
+        "options": [
+          {
+            "text": "True",
+            "value": "true"
+          },
+          {
+            "text": "False",
+            "value": "false"
+          }
+        ],
+        "required": false,
+        "defaultValue": "true"
+      }
+],
+    "privateConfig": [],
+    "privacyAndTerms": [
+      {
+        "links": [
+          {
+            "name": "Privacy Policy",
+            "value": "https://your-company/privacy"
+          },
+          {
+            "name": "Terms Of Use",
+            "value": "https://your-company/terms"
+          }
+        ],
+        "organization": "Name of your org"
+      },
+      {
+        "links": [
+          {
+            "name": "Privacy Policy",
+            "value": "https://www.soulmachines.com/privacy-policy/"
+          }
+        ],
+        "organization": "Soul Machines"
+      },
+      {
+        "links": [
+          {
+            "name": "Learn More",
+            "value": "https://help-page-of-skill.com"
+          }
+        ],
+        "organization": "Name of org"
+      }
+    ]
+  }
+}
