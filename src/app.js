@@ -31,6 +31,10 @@ export const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+router.get('/', (req, res) => {
+  res.send('howdy')
+})
+
 router.post(
   '/init',
   (request, response, next) => {
